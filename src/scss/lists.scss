@@ -1,0 +1,26 @@
+.list {
+
+		&:not(:first-child) {
+		margin-bottom: 12px;
+		margin-right: 10px;
+		color: white;
+
+		&__item:not(:first-child) {
+			margin-left: 10px;
+		}
+
+		&__link {
+			border-bottom: 1px solid white;
+		}
+
+		&--blue {
+			color: #4541FE;
+		}
+
+		&_link--blue {
+			border-bottom: 1px solid #4541FE;
+
+		}
+	}
+}
+

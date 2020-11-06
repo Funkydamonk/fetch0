@@ -1,0 +1,84 @@
+.content {
+	padding-top: 56px;
+}
+
+.heading {
+	background: black;
+	height: 160px;
+	padding-top: 24px;
+
+	&__title {
+		font-family: 'PT Sans', sans-serif;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 41px;
+		color: white;
+
+		@media (max-width: 1120px) {
+			margin: auto;
+			width: 400px;
+		}
+	}
+}
+
+.shoe-grid {
+	margin-top: -60px;
+	padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 240px);
+	grid-template-rows: repeat(4, 344px);
+	grid-gap: 32px;
+
+	@media (max-width: 1120px) {
+		grid-template-columns: repeat(2, 136px);
+		grid-template-rows: repeat(8, 232px);
+
+		gap: 52px 16px;
+
+		margin: -60px auto 0;
+		width: 400px;
+	}
+}
+
+.shoe {
+	height: 240px;
+	max-width: 100%;
+
+	&__description {
+		font-family: 'PT Sans', sans-serif;
+		font-size: 16px;
+		line-height: 21px;
+		font-weight: 700;
+		width: 70%;
+
+		@media (max-width: 1120px) {
+			font-size: 13px;
+			line-height: 17px;
+		}
+	}
+
+	&__link:hover {
+		color: #4541FE;
+	}
+
+	&__img {
+		@media (max-width: 1120px) {
+			height: 136px;
+			width: 136px;
+		}
+	}
+
+	&__title {
+		margin-top: 8px;
+	}
+
+	&__sub-title {
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 17px;
+	}
+
+	&__price {
+		margin-top: 12px;
+	}
+}

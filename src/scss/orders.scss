@@ -1,0 +1,56 @@
+.orders {
+	font-family: 'PT Sans', sans-serif;
+	position: relative;
+	&__cart {
+		
+		height: 18px;
+		width: 16px;
+	}
+
+	&__link {
+		position: relative;
+		display: flex;
+		opacity: 50%;
+
+
+		@media (max-width: 1120px) {
+			opacity: 100%;	
+		}
+
+		&:hover {
+			opacity: 50%;
+		}
+	}
+
+	&__text {
+		@media (max-width: 1120px) {
+			display: none;
+		}
+	}
+
+	&__count {
+		text-align: center;
+		font-size: 13px;
+		line-height: 16px;
+
+		position: absolute;
+		background: #4541FE;
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		top: -8px;
+		left: 6px;
+
+		visibility: hidden;
+	}
+
+	&__text {
+		border-bottom: 1px solid white;
+		margin-left: 5px;
+	}
+
+	&--black {
+		background: transparent;
+		color: black;
+	}
+}

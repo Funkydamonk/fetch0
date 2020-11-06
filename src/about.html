@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>About</title>
+</head>
+<body>
+	@@include('./html parts/header.html')
+
+	<div class="about">
+		<div class="container">
+			<div class="about__heading">
+				<h2 class="about__title">
+					О магазине Фетч
+				</h2>
+			</div>
+			<div class="about__content">
+				<div class="about__text">
+					<p class="about__parag">В магазине Фетч представлено более 100 ведущих мировых производителей одежды и обуви. </p>
+					<p class="about__parag">
+						Разнообразие ассортимента обеспечивают товары культовых брендов современности: Barbour, Fred Perry, Norse Projects, Edwin и капсульные коллекции компаний, делающих ставку на эксклюзивность и премиальный статус своей продукции — Stone Island, Polo Ralph Lauren, C.P. Company. 
+					</p>
+					<p class="about__parag">
+						Приобрести последние можно лишь в нескольких торговых точках по всему миру, включая Фетч. 
+					</p>
+					<p class="about__parag">Особый повод для гордости — обширная подборка редких и культовых кроссовок adidas Originals, Nike, New Balance, ASICS, Reebok и другие.</p>
+				</div>
+				<div class="about__contacts">
+					<p class="about__location">Москва, Тимирязевская, 3</p>
+					<span class="mail--black">
+						@@include('./html parts/mail.html')
+					</span>
+					@@include('./html parts/contacts.html')
+					<p class="about__id">
+						ИНН/КПП: 2901152637 / 290101001 <br/>
+						ОГРН: 1062901063576 <br/>
+						БИК: 041117601, к/с 30101810100000000601
+					</p>
+					<p class="about__account">Расчетный счет: 40702810004000103812 в отделении N8637 Сбербанка России, Архангельск</p>
+					<p class="about__director">
+						Генеральный директор — Василенко Артём Викторович
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@@include('./html parts/footer.html')
+	<script type="text/javascript" src="js/jquery.slim.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

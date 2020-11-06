@@ -1,0 +1,16 @@
+.mail {
+	border-bottom: 1px solid white;
+	font-family: 'PT Sans', sans-serif;
+	&:hover {
+		opacity: 50%;
+	}
+
+	&--black {
+		border-bottom: 1px solid black;
+		display: inline-block;
+
+		&:hover {
+			opacity: 50%;
+		}
+	}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Checkout</title>
+</head>
+<body>
+	<div class="checkout">
+		<div class="container">
+			<div class="checkout__heading">
+				<h2 class="checkout__title">
+					<a href="/" class="checkout__title--dot">Фетч</a>Оформление заказа
+				</h2>
+			</div>
+			<div class="checkout__body">
+			<div class="checkout__items">
+				<ul class="checkout__list">
+					<li class="checkout__item"></li>
+					<li class="checkout__item"></li>
+					<li class="checkout__item"></li>
+				</ul>
+				<div class="checkout__total">
+					<span class="checkout__price">276 000 ₽</span>
+					<p class="checkout__shipping">Доставка бесплатно</p>
+				</div>
+			</div>
+			<form action="##" class="checkout__form">
+				<div class="checkout__contacts">
+					<div class="checkout__input">
+						<label for="email" class="checkout__label">Эл. почта</label>
+						<div class="checkout__wrapper">
+							<input type="email" class="checkout__email" id="email" placeholder="petrov@yandex.ru">
+							<p class="checkout__msg">Пришлём чеки и трек-номер</p>
+						</div>
+					</div>
+					<div class="checkout__input">
+						<label for="tel" class="checkout__label">Телефон</label>
+						<div class="checkout__wrapper">
+							<input type="tel" class="checkout__tel" id="tel" placeholder="+7 999 275-12-37">
+							<p class="checkout__msg">Менеджер позвонит, чтобы подтвердить заказ</p>
+						</div>
+					</div>
+				</div>
+				<div class="checkout__whereabouts">
+					<div class="checkout__input">
+						<label for="city" class="checkout__label">Город</label>
+						<input type="text" class="checkout__city" id="city" placeholder="Москва">
+					</div>
+					<div class="checkout__input">
+						<label for="address" class="checkout__label">Адрес</label>
+						<textarea name="" id="address" class="checkout__address"
+						placeholder="Тимирязевская, 32, квартира 99, вход со двора"></textarea>
+					</div>
+				</div>
+				<div class="checkout__order">
+					<p class="checkout__text">Бесплатная <br /> доставка курьером.
+					Оплата картой онлайн.</p>
+					<button class="checkout__submit">Оформить заказ, <span class="checkout__calc">276 000 ₽</span></button>
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+
+	<footer class="footer--simple">
+		<div class="container">
+			<div class="footer__info--simple">
+				<div class="footer__team">
+					<p class="footer__text">© Фетч-команда, 2019</p>
+				</div>
+				<div class="phone--flex">
+					<a href="tel:8 800 912-11-42" class="phone-number">8 800 912-11-42</a>
+					<p class="phone-msg--flex">, звонок бесплатный</p>
+				</div>
+				<div>
+					<span class="mail--black">
+						<a href="mailto:shop@fetch.ru" class="mail">shop@fetch.ru</a>
+					</span>
+				</div>
+				<div class="footer__privacy-policy">
+					<a href="##" class="footer__info-link--simple">Правила обработки персональных данных</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery.slim.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

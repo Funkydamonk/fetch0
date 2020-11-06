@@ -1,0 +1,33 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-family: 'PT Sans', sans-serif;
+	
+
+	&__list {
+		min-width: 0;
+		margin-left: 42px;
+		display: flex;
+		position: relative;
+
+		@media (max-width: 1120px) {
+			overflow: hidden;
+			overflow-x: scroll;
+			width: 170px;
+
+		}
+	}
+
+	&__link {
+		border-bottom: 1px solid white;
+	}
+
+	&__item {
+		margin: 0 12px 0;
+		// min-width: 0;
+		&:hover {
+			opacity: 50%;
+		} 
+	}
+}
