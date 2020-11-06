@@ -185,6 +185,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   opacity: 50%;
+  cursor: default;
 }
 
 .orders__link:hover {
@@ -213,6 +214,7 @@ h6 {
 .orders--black {
   background: transparent;
   color: black;
+  cursor: pointer;
 }
 
 .footer {
@@ -368,7 +370,7 @@ h6 {
 }
 
 .mail--black {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #666666;
   display: inline-block;
 }
 
@@ -413,7 +415,7 @@ h6 {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
-  width: 70%;
+  width: 80%;
 }
 
 .shoe__link:hover {
@@ -450,6 +452,10 @@ h6 {
 .pages__array {
   line-height: 24px;
   margin-top: 10px;
+}
+
+.pages__item:hover {
+  color: #4541FE;
 }
 
 .pages__item--bold {
@@ -540,6 +546,10 @@ h6 {
   min-width: 42px;
 }
 
+.form__btn:hover {
+  border: 1px solid #666666;
+}
+
 .form__btn:not(:last-child) {
   margin-right: 12px;
 }
@@ -558,7 +568,8 @@ h6 {
 }
 
 .form__table-link:hover {
-  opacity: 50%;
+  color: #4541FE;
+  border-bottom: 1px solid #4541FE;
 }
 
 .form__buy-btn {
@@ -801,10 +812,66 @@ h6 {
   font-family: 'PT Sans', sans-serif;
 }
 
+.checkout__items {
+  width: 488px;
+  height: 100%;
+}
+
+.checkout__item {
+  width: 400px;
+  height: 160px;
+  margin-bottom: 24px;
+}
+
+.checkout__shoe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkout__shoe img {
+  width: 160px;
+  height: 160px;
+  margin-right: 16px;
+}
+
+.checkout__list {
+  border-bottom: 1px solid #DDDDDD;
+}
+
 .checkout__heading {
   font-size: 32px;
   font-weight: 700;
   line-height: 41px;
+}
+
+.checkout__total {
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.checkout__price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.checkout__shipping {
+  font-size: 13px;
+  line-height: 17px;
+  color: #666666;
 }
 
 .checkout__body {
@@ -834,6 +901,7 @@ h6 {
   background: #E5E5E5;
   top: 40%;
   left: 90px;
+  cursor: default;
 }
 
 .checkout__form {
