@@ -71,6 +71,10 @@
 			line-height: 21px;
 			min-width: 42px;
 
+		&:hover {
+			border: 1px solid #666666;
+		}
+
 		&:not(:last-child) {
 			margin-right: 12px;
 		}
@@ -87,7 +91,8 @@
 			border-bottom: 1px solid black;
 
 			&:hover {
-				opacity: 50%;
+				color: #4541FE;
+				border-bottom: 1px solid #4541FE;
 			}
 		}
 	}
