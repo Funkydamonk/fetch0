@@ -48,6 +48,12 @@ $(document).ready(function() {
 		arrows: true,
 		infinite: true,
 		slidesToShow: 4,
+		responsive: [{
+			breakpoint: 1120,
+			settings:{
+				slidesToShow: 1,	
+			}
+		}]
 	})
 });
 

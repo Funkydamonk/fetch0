@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 .orders {
-	font-family: 'PT Sans', sans-serif;
+	padding-left: 28px;
 	position: relative;
+
 	&__cart {
-		
+		font-family: 'PT Sans', sans-serif;
+		margin-left: -5px;
 		height: 18px;
-		width: 16px;
+		width: 18px;
 	}
 
 	&__link {
@@ -39,7 +43,7 @@
 		width: 15px;
 		border-radius: 50%;
 		top: -8px;
-		left: 6px;
+		left: 2px;
 
 		visibility: hidden;
 	}
@@ -55,3 +59,5 @@
 		cursor: pointer;
 	}
 }
+
+

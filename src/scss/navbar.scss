@@ -1,12 +1,15 @@
+@import "title.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 .navbar {
 	display: flex;
 	align-items: center;
 	height: 100%;
 	font-family: 'PT Sans', sans-serif;
-	
+	font-size: 16px;
+	line-height: 21px;
 
 	&__list {
-		min-width: 0;
 		margin-left: 42px;
 		display: flex;
 		position: relative;
@@ -16,6 +19,7 @@
 			overflow-x: scroll;
 			width: 170px;
 
+			margin-left: 32px;
 		}
 	}
 
@@ -24,10 +28,15 @@
 	}
 
 	&__item {
-		margin: 0 12px 0;
-		// min-width: 0;
+		margin-right: 24px; 
+
+		@media (max-width: 1120px) {
+			padding-top: 14px;
+		}
+		
 		&:hover {
 			opacity: 50%;
 		} 
 	}
 }
+

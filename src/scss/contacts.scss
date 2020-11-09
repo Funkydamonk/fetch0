@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 .contacts {
 	font-family: 'PT Sans', sans-serif;
 }
@@ -5,14 +7,17 @@
 .phone {
 	font-weight: 700;
 	line-height: 21px;
-	padding: 10px 0 20px 0;
+	padding: 8px 0 0 0;
+
+	@media screen {
+		
+	}
 
 	&-number:hover {
 		opacity: 50%;
 	}
 
 	&-msg {
-		margin-top: -5px;
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 16px;

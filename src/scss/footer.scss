@@ -1,45 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import "contacts.scss";
+
 .footer {
 	background-color: black;
 	color: white;
 	min-height: 350px;
 	width: 100%;
-	padding: 32px 15px;
+	padding: 32px 16px;
 	font-family: 'PT Sans', sans-serif;
 	
+	&__title {
+		margin: 2px 0 16px 2px;
+	}
+
+	&__mail {
+		margin: 32px 0 6px;
+	}
+
 	&__navbar {
-		display: flex;
-		justify-content: space-between;
+		column-gap: 48px;
+		display: grid;
+		width: 100%;
+		grid-template-columns: 138px 126px 124px 135px repeat(2, 147px);
 
 		@media (max-width: 1120px) {
-			flex-direction: column;
+			row-gap: 35px;
+			grid-template-columns: 200px;
 		}
-	}
-
-	&__about-list {
-		margin-top: 8px;
-		margin-bottom: 32px;
-	}
-
-	&__about-item,
-	&__item{
-		margin-bottom: 8px;
-		line-height: 21px;
-	}
-
-	&__list:not(:first-child) {
-		margin-bottom: 12px;
-		margin-right: 10px;
 	}
 
 	&__item:first-of-type {
 		font-size: 18px;
 		font-weight: 700;
+		margin-bottom: 12px;
 	}
 
-	&__item:not(:first-child),
-	&__about-list,
-	&__contact {
-		margin-left: 10px;
+	&__item,
+	&__about-item {
+		padding: 3px 0 2px 0;
+	}
+
+	&__item:not(:last-child),
+	&__about-item:not(:last-child) {
+		margin-bottom: 8px;
+	}
+
+	&__item:not(:first-of-type),
+	&__about-list li:not(:first-child) {
+		text-indent: 8px;
+
+		@media (max-width: 1120px) {
+			text-indent: 15px;
+		}
 	}
 
 	&__link {
@@ -51,9 +63,8 @@
 	}
 
 	&__info {
-		margin-top: 56px;
+		margin-top: 54px;
 		display: flex;
-		justify-content: space-between;
 		max-width: 55%;
 		font-size: 13px;
 		color: #666666;
@@ -64,10 +75,14 @@
 		}
 	}
 
+	&__info div {
+		margin-right: 24px;
+	}
+
 	&__team,
 	&__privacy-policy,
 	&__maintenance {
-		padding: 10px 0;
+		padding: 8px 0;
 	}
 
 	&__info-link {
@@ -99,7 +114,11 @@
 	&__info--simple {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		
+		& > div {
+			margin-right: 24px;
+		}
+
 		width: 70%;
 		opacity: 75%;
 

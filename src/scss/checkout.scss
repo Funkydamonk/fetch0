@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+	overflow-x: hidden;
+}
+
 .checkout {
-	padding: 32px 0 80px 0;
+	padding: 32px 0 70px 0;
 	font-weight: 400;
 	font-family: 'PT Sans', sans-serif;
 
+	@media (max-width: 1120px) {
+		padding: 0 0 70px 0;
+	}
+
 	&__items{
 		width: 488px;
-		height: 100%;
+		margin-left: -24px;
+		padding-left: 24px;
+
+		@media (max-width: 1120px) {
+			margin-left: 0;
+			padding-left: 0;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__item {
@@ -13,6 +30,12 @@
 		height: 160px;
 
 		margin-bottom: 24px;
+
+		@media (max-width: 1120px) {
+			margin-bottom: 16px;
+			height: 90px;
+			padding-left: 16px;
+		}
 	}
 
 	&__shoe {
@@ -23,11 +46,36 @@
 			height: 160px;
 
 			margin-right: 16px;
+
+			@media (max-width: 1120px) {
+				height: 90px;
+				width: 90px;
+
+				margin-right: 8px;
+			}
+		}
+
+		.shoe__description {
+			margin-top: -10px;
+			width: 163px;
+
+			@media (max-width: 1120px) {
+				margin-top: -5px;
+			}
+		}
+
+		.shoe__price {
+			margin-top: 20px;
+
+			@media (max-width: 1120px) {
+				margin-top: 6px;
+			}
 		}
 	}
 
 	&__list {
 		border-bottom: 1px solid #DDDDDD;
+		width: 488px;
 	}
 
 	&__heading {
@@ -42,6 +90,14 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: flex-end;
+
+		@media (max-width: 1120px) {
+			justify-content: flex-start;
+			align-items: start;
+
+			margin-top: 16px;
+			padding-left: 16px;
+		}
 	}
 
 	&__price {
@@ -58,15 +114,27 @@
 
 	&__body {
 		margin-top: 32px;
-
 		display: flex;
-		justify-content: space-between;
+
+		@media (max-width: 1120px) {
+			flex-direction: column;
+		}
 	}
 
 	&__title {
 		position: relative;
+
+		@media (max-width: 1120px) {
+			margin: 24px 16px 47px;			
+		}
+
 		&--dot {
 			margin-right: 30px;
+
+				@media (max-width: 1120px) {
+					margin-right: 50px;
+					display: inline-block;
+				}
 
 			&::after {
 				content: '';
@@ -76,8 +144,8 @@
 				border-radius: 50%;
 				background: #E5E5E5;
 
-				top: 40%;
-				left: 90px;
+				top: 16px;
+				left: 82px;
 
 				cursor: default;
 			}
@@ -85,15 +153,19 @@
 	}
 
 	&__form {
-		width: 550px;
-		height: 500px;
+		width: 488px;
+		height: 470px;
+		margin-left: 88px;
+		@media (max-width: 1120px) {
+			margin-left: 0;
+		}
 	}
 
 	&__label {
 		font-size: 16px;
 		line-height: 21px;
 		margin-right: 40px;
-		width: 75px;
+		width: 65px;
 
 		padding-top: 10px;
 		display: inline-block;
@@ -102,9 +174,14 @@
 	&__input {
 		display: flex;
 		align-items: left;
+		width: 377px;
 
 		&:first-child {
-			margin-bottom: 24px;
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: 1120px) {
+			flex-direction: column;
 		}
 	}
 
@@ -124,10 +201,15 @@
 	&__city,
 	&__email,
 	&__address {
-		padding: 10px;
+		padding: 7px 12px;
 		background: #FBFBFB;
 		border: 1px solid #DDDDDD;
 		border-radius: 2px;
+		font-family: PT Sans;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 21px;
+
 
 		&:focus {
 			border: 1px solid #666666;
@@ -136,37 +218,77 @@
 
 	&__contacts,
 	&__whereabouts {
-		margin: 0 90px 24px 40px;
-		width: 400px;
+		width: 368px;
+	}
+
+	&__contacts,
+	&__whereabouts { 
+
+		@media (max-width: 1120px) {
+			margin: 0;
+			margin-left: 16px;
+		}
+	}
+
+	&__contacts {
+		margin: 0 0 40px 25px;
+	}
+
+	&__whereabouts {
+		margin: 0 0 30px 25px;
+
+		@media (max-width: 1120px) {
+			margin-top: 20px;
+		}
+	}
+
+	&__wrapper {
+		width: 280px;
 	}
 
 	&__msg {
 		font-size: 13px;
 		line-height: 17px;
 		color: #666666;
+		margin-left: 10px;
+		margin-top: 4px;
 	}
 
 	&__order {
-		height: 100px;
+		height: 98px;
 		width: 100%;
 		background: #F2F2F2;
-		padding: 24px 64px 20px 24px;
+		padding: 28px 64px 19px 24px;
 
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 1120px) {
+			flex-direction: column;
+			margin-top: 28px;
+			height: 132px;
+
+			padding: 16px 74px 24px 16px;
+		}
 	}
 
 	&__text {
-		width: 35%;
+		width: 140px;
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 17px;
 
+		@media (max-width: 1120px) {
+			width: 200px;
+		}
 
 	}
 
 	&__submit {
-		padding: 8px 18px;
+		margin-top: -4px;
+		width: 230px;
+		height: 41px;
+		padding: 0 18.5px;
 		background: linear-gradient(180deg, #FFC908 0%, #FFBA08 100%);
 		box-shadow: 0px 0px 15px rgba(255, 146, 17, 0.5);
 		border-radius: 4px;
@@ -174,11 +296,15 @@
 		font-family: 'PT Sans', sans-serif;
 		font-size: 16px;
 		font-weight: 700;
-		line-height: 21px;
+		line-height: 16px;
 		text-align: center;
 
 		&:hover {
 			background: linear-gradient(180deg, #F5BF00 0%, #F0AD00 100%);
+		}
+
+		@media (max-width: 1120px) {
+			
 		}
 	}
 }

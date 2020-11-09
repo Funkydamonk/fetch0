@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 .about {
-	padding: 80px 0;
+	padding: 80px 0 0;
 	font-family: 'PT Sans', sans-serif;
 	color: black;
 
 	@media (max-width: 1120px) {
-		padding: 80px 0 0 0;	
+		padding: 72px 0 0 0;	
 	}
 
 	&__title {
@@ -28,27 +30,36 @@
 
 		@media (max-width: 1120px) {
 			width: 100%;
-			padding: 15px;
+			padding: 0 15px;
+			margin-top: 24px;
 		}
 	}
 
 	&__parag:not(:first-child) {
-		margin-top: 20px;
+		margin-top: 17px;
+	}
+
+	&__parag:last-child {
+		margin-top: 15px;
 	}
 
 	&__content {
 		display: flex;
 		justify-content: space-between;
 
+		margin-bottom: 64px;
+
 		@media (max-width: 1120px) {
 			flex-direction: column;
+			margin-bottom: 0;
 		}
 	}
 
 	&__contacts {
+		margin-top: 5px;
 		width: 584px;
 		background: #F2F2F2;
-		padding: 27px 60px 32px 26px;
+		padding: 27px 60px 32px 24px;
 
 		font-size: 16px;
 		font-weight: 400;
@@ -56,16 +67,21 @@
 
 		@media (max-width: 1120px) {
 			width: 100%;
+			padding: 16px 10px 24px 10px;
 		}
+	}
+
+	&__id {
+		margin-top: 30px;
 	}
 
 	&__location,
 	&__id {
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 
-	&__account {
-		margin-bottom: 40px;
+	&__credentials {
+		margin-bottom: 15px;
 	}
 
 }
