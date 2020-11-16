@@ -11,39 +11,59 @@
 
 		<div class="product">
 			<div class="container">
-				<div class="product__body">
+				<div class="product__body" itemtype="http://schema.org/Product" itemscope>
 					<div class="product__info">
 						<div class="product__name">
-							<h2 class="product__title">Maison Margiela Fusion Low Sneakers</h2>
-							<p class="product__sub-title">Кроссовки</p>
+							<h2 class="product__title" itemprop="name">Maison Margiela Fusion Low Sneakers</h2>
+							<p class="product__sub-title" itemprop="description">Кроссовки</p>
 						</div>
 
-						<form action="##" class="product__form form">
+						<form action="###" class="product__form form">
 							<div class="form__prop">
 								<p class="form__text">Цвет</p>
 								<div class="form__buttons">
-									<button class="form__btn form__btn--selected">Белый с розовым</button>
-									<button class="form__btn">Белый с зелёным</button>
+									<div class="form__radio-btn">
+										<input id="radio-1" type="radio" name="radio" value="Белый с розовым" checked>
+										<label for="radio-1">Белый с розовым</label>
+									</div>
+									<div class="form__radio-btn">
+										<input id="radio-2" type="radio" name="radio" value="Белый с зелёным">
+										<label for="radio-2">Белый с зелёным</label>
+									</div>
 								</div>
 							</div>
 							<div class="form__prop">
 								<p class="form__text">Размер US</p>
 								<div class="form__buttons">
-									<button class="form__btn">6</button>
-									<button class="form__btn form__btn--selected">6,5</button>
-									<button class="form__btn">7</button>
-									<button class="form__btn">9</button>
+									<div class="form__radio-btn">
+										<input id="radio-3" type="radio" name="radio1" value="6">
+										<label for="radio-3">6</label>
+									</div>
+									<div class="form__radio-btn">
+										<input id="radio-4" type="radio" name="radio1" value="6,5" checked>
+										<label for="radio-4">6,5</label>
+									</div>
+									<div class="form__radio-btn">
+										<input id="radio-5" type="radio" name="radio1" value="7">
+										<label for="radio-5">7</label>
+									</div>
+									<div class="form__radio-btn">
+										<input id="radio-6" type="radio" name="radio1" value="9">
+										<label for="radio-6">9</label>
+									</div>
 								</div>
 							</div>
 							<div class="form__table">
 								<a href="##" class="form__table-link">Таблица размеров</a>
 							</div>
-							<div class="form__buy">
-								<button class="form__buy-btn buy-button">Купить, 92 000 ₽</button>
+							<div class="form__buy" itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+								<button type="submit" class="form__buy-btn buy-button">Купить, 92 000 ₽</button>
+								<meta itemprop="priceCurrency" content="RUB" />
+								<meta itemprop="price" content="92000" />
 							</div>
 						</form>
 
-						<div class="product__description">
+						<div class="product__description" itemprop="description">
 							<div class="product__groupper">
 								<div class="properties">
 									<p class="properties__property">Материал</p>
@@ -59,7 +79,7 @@
 								<div class="properties__value">
 									<p class="properties__parag">Деконструктивный и авангардный дизайн с уникальными концепциями и нетрадиционным мастерством.</p>
 									<p class="properties__parag"> 
-									В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля.</p> 
+									В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля.</p> 
 									<p class="properties__parag">
 									Грубые и многослойные кроссовки показывают отличие от традиционного аккуратного стиля создания обуви. Они оснащены раскрашенной вручную резиновой подошвой с брызгами и потеками.</p>
 									<p class="properties__parag">
@@ -87,17 +107,17 @@
 						<div class="anchor-slider">
 							<div class="anchor-slider__item"><img src="img/anchorslider/img1.png" alt="sneakers" class="anchor-slider__img"></div>
 							<div class="anchor-slider__item"><img src="img/anchorslider/image 2.png" alt="sneakers" class="anchor-slider__img"></div>
-							<div class="anchor-slider__item"><img src="img/anchorslider/image 3.png" alt="sneakers" class="anchor-slider__img"></div>
-							<div class="anchor-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="anchor-slider__img"></div>
-							<div class="anchor-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="anchor-slider__img"></div>
+							<div class="anchor-slider__item"><img src="img/anchorslider/image 3.png" alt="sneakers" class="anchor-slider__img" loading="lazy"></div>
+							<div class="anchor-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="anchor-slider__img" loading="lazy"></div>
+							<div class="anchor-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="anchor-slider__img" loading="lazy"></div>
 						</div>
 
 						<div class="sub-slider">
 							<div class="sub-slider__item"><img src="img/anchorslider/img1.png" alt="sneakers" class="sub-slider__img"></div>
 							<div class="sub-slider__item"><img src="img/anchorslider/image 2.png" alt="sneakers" class="sub-slider__img"></div>
-							<div class="sub-slider__item"><img src="img/anchorslider/image 3.png" alt="sneakers" class="sub-slider__img"></div>
-							<div class="sub-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="sub-slider__img"></div>
-							<div class="sub-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="sub-slider__img"></div>
+							<div class="sub-slider__item"><img src="img/anchorslider/image 3.png" alt="sneakers" class="sub-slider__img" loading="lazy"></div>
+							<div class="sub-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="sub-slider__img" loading="lazy"></div>
+							<div class="sub-slider__item"><img src="img/anchorslider/image 4.png" alt="sneakers" class="sub-slider__img" loading="lazy"></div>
 						</div>
 					</div>
 				</div>
@@ -107,65 +127,77 @@
 					<div class="offer__slider">
 						<div class="offer__item">
 							<div class="shoe">
-							<div class="shoe__description">
-								<img src="img/shoes/shoe4.png" alt="shoe" class="shoe__img">
-								<h2 class="shoe__title">Maison Margiela Fusion Low Sneakers</h2>
-								<p class="shoe__sub-title">Кроссовки</p>
-								<p class="shoe__price">92 000 ₽</p>
-							</div>	
+								<a href="product.html" class="shoe__link">
+									<img src="img/shoes/shoe4.png" alt="shoe" class="shoe__img">
+									<div class="shoe__description">
+										<p class="shoe__title">Maison Margiela Fusion Low Sneakers</p>
+										<p class="shoe__sub-title">Кроссовки</p>
+										<p class="shoe__price">92 000 ₽</p>
+									</div>
+								</a>	
 							</div>					
 						</div>
 						<div class="offer__item">
 							<div class="shoe">
-							<div class="shoe__description">
-								<img src="img/shoes/shoe9.png" alt="shoe" class="shoe__img">
-								<h2 class="shoe__title">Maison Margiela Fusion Low Sneakers</h2>
-								<p class="shoe__sub-title">Кроссовки</p>
-								<p class="shoe__price">92 000 ₽</p>
-							</div>
-						</div>						
+								<a href="product.html" class="shoe__link">
+									<img src="img/shoes/shoe9.png" alt="shoe" class="shoe__img">
+									<div class="shoe__description">
+										<p class="shoe__title">Maison Margiela Fusion Low Sneakers</p>
+										<p class="shoe__sub-title">Кроссовки</p>
+										<p class="shoe__price">92 000 ₽</p>
+									</div>
+								</a>
+							</div>						
 						</div>
 						<div class="offer__item">
 							<div class="shoe">
-							<div class="shoe__description">
-								<img src="img/shoes/shoe12.png" alt="shoe" class="shoe__img">
-								<h2 class="shoe__title">Maison Margiela Fusion Low Sneakers</h2>
-								<p class="shoe__sub-title">Кроссовки</p>
-								<p class="shoe__price">92 000 ₽</p>
+								<a href="product.html" class="shoe__link">
+									<img src="img/shoes/shoe12.png" alt="shoe" class="shoe__img">
+									<div class="shoe__description">
+										<p class="shoe__title">Maison Margiela Fusion Low Sneakers</p>
+										<p class="shoe__sub-title">Кроссовки</p>
+										<p class="shoe__price">92 000 ₽</p>
+									</div>
+								</a>
 							</div>
-						</div>
 						</div>
 						<div class="offer__item">
 							<div class="shoe">
-							<div class="shoe__description">
-								<img src="img/shoes/shoe2.png" alt="shoe" class="shoe__img">
-								<h2 class="shoe__title">Maison Margiela Fusion Low Sneakers</h2>
-								<p class="shoe__sub-title">Кроссовки</p>
-								<p class="shoe__price">92 000 ₽</p>
+								<a href="product.html" class="shoe__link">
+									<img src="img/shoes/shoe2.png" alt="shoe" class="shoe__img">
+									<div class="shoe__description">
+										<p class="shoe__title">Maison Margiela Fusion Low Sneakers</p>
+										<p class="shoe__sub-title">Кроссовки</p>
+										<p class="shoe__price">92 000 ₽</p>
+									</div>
+								</a>
 							</div>
-						</div>
 						</div>
 						<div class="offer__item">
 							<div class="shoe">
-							<div class="shoe__description">
-								<img src="img/shoes/shoe10.png" alt="shoe" class="shoe__img">
-								<h2 class="shoe__title">Maison Margiela Fusion Low Sneakers</h2>
-								<p class="shoe__sub-title">Кроссовки</p>
-								<p class="shoe__price">92 000 ₽</p>
+								<a href="product.html" class="shoe__link">
+									<img src="img/shoes/shoe10.png" alt="shoe" class="shoe__img">
+									<div class="shoe__description">
+										<p class="shoe__title">Maison Margiela Fusion Low Sneakers</p>
+										<p class="shoe__sub-title">Кроссовки</p>
+										<p class="shoe__price">92 000 ₽</p>
+									</div>
+								</a>	
 							</div>
-						</div>
 						</div>
 						<div class="offer__item">
 							<div class="shoe">
-							<div class="shoe__description">
-								<img src="img/shoes/shoe11.png" alt="shoe" class="shoe__img">
-								<h2 class="shoe__title">Maison Margiela Fusion Low Sneakers</h2>
-								<p class="shoe__sub-title">Кроссовки</p>
-								<p class="shoe__price">92 000 ₽</p>
+								<a href="product.html" class="shoe__link">
+									<img src="img/shoes/shoe11.png" alt="shoe" class="shoe__img">
+									<div class="shoe__description">
+										<p class="shoe__title">Maison Margiela Fusion Low Sneakers</p>
+										<p class="shoe__sub-title">Кроссовки</p>
+										<p class="shoe__price">92 000 ₽</p>
+									</div>
+								</a>
 							</div>
 						</div>
-						</div>
-				</div>
+					</div>
 			</div>
 		</div>
 		@@include('./html parts/footer.html')

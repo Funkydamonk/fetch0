@@ -5,7 +5,7 @@
 	margin-bottom: 40px;
 	overflow-x: hidden;
 
-	@media (max-width: 1120px) {
+	@media (max-width: 1199px) {
 		margin-bottom: 20px;
 	}
 }
@@ -15,7 +15,7 @@
 	height: 160px;
 	padding-top: 24px;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			padding: 16px 0 0 16px;
 		}
 
@@ -36,7 +36,7 @@
 	grid-template-rows: repeat(4, 344px);
 	grid-gap: 48px 32px;
 
-	@media (max-width: 1120px) {
+	@media (max-width: 1199px) {
 		grid-template-columns: repeat(2, 136px);
 		grid-template-rows: repeat(6, 232px);
 
@@ -52,6 +52,20 @@
 			display: none;
 		}
 	}
+
+	.shoe__description {
+		@media (max-width: 1199px) {
+			font-size: 13px;
+			line-height: 17px;
+		}		
+	}
+
+	.shoe__img {
+		@media (max-width: 1199px) {
+			height: 136px;
+			width: 136px;
+		}		
+	}
 }
 
 .shoe {
@@ -65,9 +79,9 @@
 		font-weight: 700;
 		width: 70%;
 
-		@media (max-width: 1120px) {
-			font-size: 13px;
-			line-height: 17px;
+		@media (max-width: 1199px) {
+			// font-size: 13px;
+			// line-height: 17px;
 			width: 100%;
 
 			margin-top: 12px;
@@ -79,7 +93,7 @@
 	}
 
 	&__price {
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			font-size: 16px;
 			line-height: 20px;
 		}
@@ -90,14 +104,17 @@
 	}
 
 	&__img {
-		@media (max-width: 1120px) {
-			height: 136px;
-			width: 136px;
+		@media (max-width: 1199px) {
+			// height: 136px;
+			// width: 136px;
+			height: 240px;
+			width: 240px;
 		}
 	}
 
 	&__title {
 		margin-top: 8px;
+		text-decoration: underline;
 	}
 
 	&__sub-title {

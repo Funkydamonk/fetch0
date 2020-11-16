@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-body {
-	overflow-x: hidden;
-}
-
 .checkout {
 	padding: 32px 0 70px 0;
 	font-weight: 400;
 	font-family: 'PT Sans', sans-serif;
 
-	@media (max-width: 1120px) {
-		padding: 0 0 70px 0;
+	width: 100%;
+
+	@media (max-width: 1199px) {
+		padding: 0;
 	}
 
 	&__items{
@@ -18,10 +16,11 @@ body {
 		margin-left: -24px;
 		padding-left: 24px;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			margin-left: 0;
 			padding-left: 0;
 			margin-bottom: 20px;
+			width: 98vw;
 		}
 	}
 
@@ -31,15 +30,20 @@ body {
 
 		margin-bottom: 24px;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			margin-bottom: 16px;
 			height: 90px;
 			padding-left: 16px;
+			width: 100%;
 		}
 	}
 
 	&__shoe {
 		display: flex;
+
+		@media (max-width: 1199px) {
+			width: 100%;
+		}
 
 		img {
 			width: 160px;
@@ -47,7 +51,7 @@ body {
 
 			margin-right: 16px;
 
-			@media (max-width: 1120px) {
+			@media (max-width: 1199px) {
 				height: 90px;
 				width: 90px;
 
@@ -59,7 +63,7 @@ body {
 			margin-top: -10px;
 			width: 163px;
 
-			@media (max-width: 1120px) {
+			@media (max-width: 1199px) {
 				margin-top: -5px;
 			}
 		}
@@ -67,15 +71,24 @@ body {
 		.shoe__price {
 			margin-top: 20px;
 
-			@media (max-width: 1120px) {
+			@media (max-width: 1199px) {
 				margin-top: 6px;
 			}
+		}
+
+		.shoe__title {
+			margin-top: 0;
+			text-decoration: none;
 		}
 	}
 
 	&__list {
 		border-bottom: 1px solid #DDDDDD;
 		width: 488px;
+
+		@media (max-width: 1199px) {
+			width: 98vw;
+		}
 	}
 
 	&__heading {
@@ -91,10 +104,10 @@ body {
 		justify-content: flex-end;
 		align-items: flex-end;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			justify-content: flex-start;
 			align-items: start;
-
+			width: 100vw;
 			margin-top: 16px;
 			padding-left: 16px;
 		}
@@ -116,7 +129,7 @@ body {
 		margin-top: 32px;
 		display: flex;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			flex-direction: column;
 		}
 	}
@@ -124,14 +137,14 @@ body {
 	&__title {
 		position: relative;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			margin: 24px 16px 47px;			
 		}
 
 		&--dot {
 			margin-right: 30px;
 
-				@media (max-width: 1120px) {
+				@media (max-width: 1199px) {
 					margin-right: 50px;
 					display: inline-block;
 				}
@@ -156,8 +169,9 @@ body {
 		width: 488px;
 		height: 470px;
 		margin-left: 88px;
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			margin-left: 0;
+			width:100%;
 		}
 	}
 
@@ -180,8 +194,9 @@ body {
 			margin-bottom: 25px;
 		}
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			flex-direction: column;
+			width: 100%;
 		}
 	}
 
@@ -195,6 +210,7 @@ body {
 	&__address {
 		width: 265px;
 		height: 84px;
+		resize: none;
 	}
 
 	&__tel,
@@ -219,14 +235,11 @@ body {
 	&__contacts,
 	&__whereabouts {
 		width: 368px;
-	}
 
-	&__contacts,
-	&__whereabouts { 
-
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			margin: 0;
 			margin-left: 16px;
+			width: 100vw;
 		}
 	}
 
@@ -237,7 +250,7 @@ body {
 	&__whereabouts {
 		margin: 0 0 30px 25px;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			margin-top: 20px;
 		}
 	}
@@ -263,7 +276,7 @@ body {
 		display: flex;
 		justify-content: space-between;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			flex-direction: column;
 			margin-top: 28px;
 			height: 132px;
@@ -278,7 +291,7 @@ body {
 		font-weight: 400;
 		line-height: 17px;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			width: 200px;
 		}
 
@@ -303,8 +316,46 @@ body {
 			background: linear-gradient(180deg, #F5BF00 0%, #F0AD00 100%);
 		}
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			
 		}
+	}
+}
+
+.footer-sm {
+	width: 100%;
+	padding: 16px;
+	opacity: 50%;
+
+	@media (max-width: 1199px) {
+		margin-top: 200px;
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+
+		& > div {
+			margin-right: 24px;
+		}
+
+		@media (max-width: 1199px) {
+			flex-direction: column;
+			align-items: start;
+			justify-content: space-between;
+			height: 150px;
+
+			margin-bottom: 40px;
+		}
+	}
+
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+
+	&__link:hover {
+		opacity: 50%;
+		border-bottom: 1px solid black;
 	}
 }

@@ -23,7 +23,7 @@
 		width: 100%;
 		grid-template-columns: 138px 126px 124px 135px repeat(2, 147px);
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			row-gap: 35px;
 			grid-template-columns: 200px;
 		}
@@ -49,7 +49,7 @@
 	&__about-list li:not(:first-child) {
 		text-indent: 8px;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			text-indent: 15px;
 		}
 	}
@@ -69,7 +69,7 @@
 		font-size: 13px;
 		color: #666666;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1199px) {
 			flex-direction: column;
 			max-width: 100%;
 		}
@@ -91,40 +91,5 @@
 			color: white;
 			border-bottom: 1px solid white;
 		}
-
-		&--simple {
-			border-bottom: 1px solid #666666;
-		}
-		
-		&--simple:hover {
-			opacity: 50%;
-		}
 	}	
-
-
-
-	&--simple {
-		height: 50px;
-		font-size: 13px;
-		font-weight: 400;
-		line-height: 17px;
-		color: #000000;
-	}
-
-	&__info--simple {
-		display: flex;
-		align-items: center;
-		
-		& > div {
-			margin-right: 24px;
-		}
-
-		width: 70%;
-		opacity: 75%;
-
-		@media (max-width: 1120px) {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-	}
 }

@@ -9,11 +9,11 @@
 <body>
 	@@include('./html parts/header.html')
 
-	<div class="about">
+	<div class="about" itemscope itemtype="https://schema.org/Organization">
 		<div class="container">
 			<div class="about__heading">
 				<h2 class="about__title">
-					О магазине Фетч
+					О магазине <span itemprop="name">Фетч</span>
 				</h2>
 			</div>
 			<div class="about__content">
@@ -27,19 +27,24 @@
 					</p>
 					<p class="about__parag">Особый повод для гордости — обширная подборка редких и культовых кроссовок adidas Originals, Nike, New Balance, ASICS, Reebok и другие.</p>
 				</div>
-				<div class="about__contacts">
+				<div class="about__contacts" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 					<p class="about__location">Москва, Тимирязевская, 3</p>
 					<span class="mail--black">
-						@@include('./html parts/mail.html')
+						<a href="mailto:shop@fetch.ru" class="mail mail--black" itemprop="email">shop@fetch.ru</a>
 					</span>
-					@@include('./html parts/contacts.html')
+					<div class="contacts">
+						<div class="phone">
+							<a href="tel:8 800 912-11-42" class="phone-number" itemprop="telephone">8 800 912-11-42</a>
+							<p class="phone-msg">Звонок бесплатный</p>
+						</div>
+					</div>	
 					<p class="about__id">
 						ИНН/КПП: 2901152637 / 290101001 <br/>
 						ОГРН: 1062901063576 <br/>
 						БИК: 041117601, к/с 30101810100000000601
 					</p>
 					<p class="about__credentials">Расчетный счет: 40702810004000103812 в отделении N8637 Сбербанка России, Архангельск</p>
-					<p class="about__director">
+					<p class="about__director" itemscope itemtype="https://schema.org/Person">
 						Генеральный директор — Василенко Артём Викторович
 					</p>
 				</div>

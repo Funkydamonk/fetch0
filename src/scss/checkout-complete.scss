@@ -1,0 +1,48 @@
+@import "offer.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+.deal {
+	padding-top: 70px;	
+
+	&__offer {
+		margin-bottom: 64px;
+	}
+}
+
+.success {
+	font-family: 'PT Sans', sans-serif;
+	margin-bottom: 64px;
+
+	@media (max-width: 1199px) {
+		padding: 0 16px;	
+	}
+
+	&__title {
+		
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 41px;
+	}
+
+	&__line {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 23px;
+
+		&:first-of-type {
+			margin-top: 32px;
+		}
+
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+	}
+
+	&__link {
+		border-bottom: 1px solid black;
+
+		&:hover {
+			opacity: 50%;
+		}
+	}
+}
